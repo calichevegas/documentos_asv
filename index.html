@@ -2,102 +2,103 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Fundación Aprender, Servir y Vivir</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Estados Financieros | Fundación Aprender, Servir y Vivir</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <style>
-    * { box-sizing: border-box; margin: 0; padding: 0; }
-    body { font-family: 'Segoe UI', sans-serif; background: #f4f9f8; color: #333; line-height: 1.6; }
-    header { background: #2c3e50; color: white; padding: 2rem 1rem; text-align: center; }
-    header h1 { font-size: 2rem; margin-bottom: 0.5rem; }
-    header p { font-size: 1rem; }
-
-    .cover {
-      width: 100%;
-      max-height: 300px;
-      object-fit: cover;
-      display: block;
-    }
-
-    .container { max-width: 800px; margin: 2rem auto; padding: 0 1rem; }
-
-    section.who-we-are {
-      background: white;
-      padding: 2rem;
-      border-radius: 10px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.05);
-      margin-bottom: 2rem;
-    }
-
-    section.who-we-are h2 {
-      font-size: 1.8rem;
-      color: #2c3e50;
-      margin-bottom: 1rem;
-    }
-
-    .btn-download {
-      display: inline-block;
-      background: #2980b9;
-      color: white;
-      padding: 0.75rem 1.5rem;
-      border-radius: 5px;
-      text-decoration: none;
-      font-weight: bold;
-      transition: background 0.3s ease;
-    }
-
-    .btn-download:hover {
-      background: #1c5f87;
-    }
-
-    footer {
-      text-align: center;
-      padding: 2rem 1rem;
-      font-size: 0.9rem;
-      color: #777;
-    }
-
-    @media (max-width: 600px) {
-      header h1 { font-size: 1.5rem; }
-      .container { padding: 1rem; }
+    body { font-family: Arial, sans-serif; margin:0; padding:0; background:#f9f9f9; }
+    header { background:#2c3e50; color:#ecf0f1; padding:1rem; text-align:center; position:relative; }
+    header img.logo { height:80px; position:absolute; top:10px; left:10px; }
+    header h1 { margin:0; font-size:2rem; }
+    header p { margin:0.5rem 0 0; }
+    .cover { width:100%; max-height:300px; object-fit:cover; }
+    main { max-width:800px; margin:2rem auto; background:#fff; padding:2rem; border-radius:8px; }
+    .desc { margin-bottom:1.5rem; }
+    table { width:100%; border-collapse:collapse; margin-bottom:2rem; }
+    th, td { padding:0.75rem; border-bottom:1px solid #ddd; text-align:left; }
+    th { background:#ecf0f1; }
+    a.download { color:#2980b9; text-decoration:none; font-weight:bold; }
+    footer { text-align:center; padding:1rem; font-size:0.9rem; color:#888; }
+    @media(max-width:600px) {
+      header img.logo { height:60px; top:5px; left:5px; }
+      header h1 { font-size:1.5rem; }
     }
   </style>
 </head>
 <body>
-
   <header>
+    <img src="assets/logo.png" alt="Logo Fundación ASV" class="logo">
     <h1>Fundación Aprender, Servir y Vivir</h1>
-    <p>Una comunidad guiada por la palabra de Dios</p>
+    <p>Estados Financieros Públicos</p>
   </header>
 
-  <img src="assets/portada.jpg" alt="Imagen de portada" class="cover">
+  <img src="assets/portada.jpg" alt="Portada comunidad ASV" class="cover">
 
-  <div class="container">
-    <section class="who-we-are">
-      <h2>¿Quiénes somos?</h2>
+  <main>
+    <section class="desc">
       <p>
-        Somos una comunidad cristiana comprometida con el crecimiento espiritual, el servicio mutuo y la vida en valores. Nuestra fundación, <strong>Aprender, Servir y Vivir</strong>, promueve el aprendizaje de la palabra de Dios y el apoyo a quienes más lo necesitan a través de proyectos sociales, educación bíblica y espacios de encuentro fraterno.
+        Bienvenidos. Aquí puedes descargar nuestros estados financieros.
+      </p>
+      <p>Síguenos en Instagram:
+        <a href="https://www.instagram.com/fundacionasv" target="_blank">@fundacionasv</a>
       </p>
     </section>
 
-    <section style="text-align: center;">
-      <a href="#descargas" class="btn-download">Ver informes financieros</a>
-    </section>
-  </div>
+    <section>
+      <table>
+        <thead>
+          <tr>
+           
+            <th>Descripción</th>
+            <th>Archivo</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+          
+            <td>ACTA DE ASAMBLEA FUNDACIÓN ASV MARZO 2025</td>
+            <td><a href="docs/ACTA DE ASAMBLEA FUNDACIÓN ASV MARZO 2025" class="download" target="_blank">Descargar PDF</a></td>
+          </tr>
+          <tr>
+          
+            <td>CERTIFICADO CADUCIDAD CONTRATOS</td>
+            <td><a href="docs/CERTIFICADOCADUCIDADCONTRATOS.pdf" class="download" target="_blank">Descargar PDF</a></td>
+          </tr>
+          <tr>
+          
+            <td>CERTIFICADO CUMPLIMEINTO REQUISITOS</td>
+            <td><a href="docs/CERTIFICADOCUMPLIMEINTOREQUISITOS.pdf" class="download" target="_blank">Descargar PDF</a></td>
+          </tr>
 
-  <div class="container" id="descargas" style="margin-top: 3rem;">
-    <section class="who-we-are">
-      <h2>Informes Financieros</h2>
-      <ul style="list-style: none; padding-left: 0;">
-        <li><a href="docs/2024_Estado_Financiero.pdf" target="_blank" class="btn-download">Descargar Informe 2024</a></li>
-        <li style="margin-top: 1rem;"><a href="docs/2023_Estado_Financiero.pdf" target="_blank" class="btn-download">Descargar Informe 2023</a></li>
-        <!-- Agrega más documentos si lo deseas -->
-      </ul>
+          <tr>
+          
+            <td>CERTIFICADO REMUNERACION CARGOS GERENCIALES</td>
+            <td><a href="docs/CERTIFICADOREMUNERACIONCARGOSGERENCIALES.pdf" class="download" target="_blank">Descargar PDF</a></td>
+          </tr>
+
+          <tr>
+          
+            <td>ESTADOS FINANCIEROS FUNDACIÓN APRENDER SERVIR Y VIVIR 2024</td>
+            <td><a href="docs/ESTADOS FINANCIEROS FUNDACIÓN APRENDER SERVIR Y VIVIR 2024.pdf" class="download" target="_blank">Descargar PDF</a></td>
+          </tr>
+
+          <tr>
+          
+            <td>INFORME DE GESTION FUNDACION APRENDER SERVIR Y VIVIR</td>
+            <td><a href="docs/INFORME DE GESTION FUNDACION APRENDER SERVIR Y VIVIR.pdf" class="download" target="_blank">Descargar PDF</a></td>
+          </tr>
+           <tr>
+          
+            <td>NOTAS ESTADOS FINANCIEROS FIRMADOS2024</td>
+            <td><a href="docs/NOTAS ESTADOS FINANCIEROS FIRMADOS2024.pdf" class="download" target="_blank">Descargar PDF</a></td>
+          </tr>
+          <!-- Añade más filas según tus documentos -->
+        </tbody>
+      </table>
     </section>
-  </div>
+  </main>
 
   <footer>
-    © 2025 Fundación Aprender, Servir y Vivir. Todos los derechos reservados.
+    © 2025 Fundación Aprender, Servir y Vivir – Todos los derechos reservados.
   </footer>
-
 </body>
 </html>
