@@ -2,65 +2,102 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Estados Financieros | Fundación Aprender, Servir y Vivir</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Fundación Aprender, Servir y Vivir</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
-    body { font-family: Arial, sans-serif; margin: 0; padding: 0; line-height: 1.6; background: #f9f9f9; }
-    header { background: #2c3e50; color: #ecf0f1; padding: 1rem; text-align: center; }
-    header h1 { margin: 0; font-size: 1.8rem; }
-    main { max-width: 800px; margin: 2rem auto; background: #fff; padding: 2rem; border-radius: 8px; }
-    .desc { margin-bottom: 1.5rem; }
-    table { width: 100%; border-collapse: collapse; margin-bottom: 2rem; }
-    th, td { padding: 0.75rem; border-bottom: 1px solid #ddd; text-align: left; }
-    th { background: #ecf0f1; }
-    a.download { color: #2980b9; text-decoration: none; font-weight: bold; }
-    footer { text-align: center; padding: 1rem; font-size: 0.9rem; color: #888; }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: 'Segoe UI', sans-serif; background: #f4f9f8; color: #333; line-height: 1.6; }
+    header { background: #2c3e50; color: white; padding: 2rem 1rem; text-align: center; }
+    header h1 { font-size: 2rem; margin-bottom: 0.5rem; }
+    header p { font-size: 1rem; }
+
+    .cover {
+      width: 100%;
+      max-height: 300px;
+      object-fit: cover;
+      display: block;
+    }
+
+    .container { max-width: 800px; margin: 2rem auto; padding: 0 1rem; }
+
+    section.who-we-are {
+      background: white;
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+      margin-bottom: 2rem;
+    }
+
+    section.who-we-are h2 {
+      font-size: 1.8rem;
+      color: #2c3e50;
+      margin-bottom: 1rem;
+    }
+
+    .btn-download {
+      display: inline-block;
+      background: #2980b9;
+      color: white;
+      padding: 0.75rem 1.5rem;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background 0.3s ease;
+    }
+
+    .btn-download:hover {
+      background: #1c5f87;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem 1rem;
+      font-size: 0.9rem;
+      color: #777;
+    }
+
+    @media (max-width: 600px) {
+      header h1 { font-size: 1.5rem; }
+      .container { padding: 1rem; }
+    }
   </style>
 </head>
 <body>
+
   <header>
     <h1>Fundación Aprender, Servir y Vivir</h1>
-    <p>Estados Financieros Públicos</p>
+    <p>Una comunidad guiada por la palabra de Dios</p>
   </header>
-  <main>
-    <section class="desc">
+
+  <img src="assets/portada.jpg" alt="Imagen de portada" class="cover">
+
+  <div class="container">
+    <section class="who-we-are">
+      <h2>¿Quiénes somos?</h2>
       <p>
-        Bienvenidos. Aquí puedes ver y descargar nuestros estados financieros. La Fundación <strong>
-      </p>
-      <p>Síguenos en Instagram:
-        <a href="https://www.instagram.com/fundacionasv" target="_blank">
-          @fundacionasv
-        </a>
+        Somos una comunidad cristiana comprometida con el crecimiento espiritual, el servicio mutuo y la vida en valores. Nuestra fundación, <strong>Aprender, Servir y Vivir</strong>, promueve el aprendizaje de la palabra de Dios y el apoyo a quienes más lo necesitan a través de proyectos sociales, educación bíblica y espacios de encuentro fraterno.
       </p>
     </section>
 
-    <section>
-      <table>
-        <thead>
-          <tr>
-            <th>Año</th>
-            <th>Descripción</th>
-            <th>Archivo</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>2024</td>
-            <td>Estados Financieros Auditados</td>
-            <td><a href="docs/2024_Estado_Financiero.pdf" class="download" target="_blank">Descargar PDF</a></td>
-          </tr>
-          <tr>
-            <td>2023</td>
-            <td>Informe de Resultados y Flujo de Caja</td>
-            <td><a href="docs/2023_Resultados.pdf" class="download" target="_blank">Descargar PDF</a></td>
-          </tr>
-          <!-- Agrega más filas según los documentos que subas -->
-        </tbody>
-      </table>
+    <section style="text-align: center;">
+      <a href="#descargas" class="btn-download">Ver informes financieros</a>
     </section>
-  </main>
+  </div>
+
+  <div class="container" id="descargas" style="margin-top: 3rem;">
+    <section class="who-we-are">
+      <h2>Informes Financieros</h2>
+      <ul style="list-style: none; padding-left: 0;">
+        <li><a href="docs/2024_Estado_Financiero.pdf" target="_blank" class="btn-download">Descargar Informe 2024</a></li>
+        <li style="margin-top: 1rem;"><a href="docs/2023_Estado_Financiero.pdf" target="_blank" class="btn-download">Descargar Informe 2023</a></li>
+        <!-- Agrega más documentos si lo deseas -->
+      </ul>
+    </section>
+  </div>
+
   <footer>
-    © 2025 Fundación Aprender, Servir y Vivir – Todos los derechos reservados.
+    © 2025 Fundación Aprender, Servir y Vivir. Todos los derechos reservados.
   </footer>
+
 </body>
 </html>
